@@ -13,3 +13,23 @@ variable "Created_by" {
 variable "Dept" {
 
 }
+
+variable "ami" {
+
+}
+
+variable "key_name" {
+
+}
+
+variable "subnet_id" {
+
+}
+
+variable "user_data" {
+
+}
+
+variable "count" {
+
+}
