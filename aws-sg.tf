@@ -24,12 +24,13 @@ resource "aws_security_group" "public" {
     to_port     = 0
     protocol    = "-1"
     cidr_blocks = ["0.0.0.0/0"]
+  }
 
-    tags = {
-      Name      = "${var.Name}.public"
-      Env       = "${var.Env}"
-      Create_by = "${var.Created_by}"
-      Dept      = "${var.Dept}"
+  tags = {
+    Name      = "${var.Name}.public"
+    Env       = "${var.Env}"
+    Create_by = "${var.Created_by}"
+    Dept      = "${var.Dept}"
 
   }
 }
