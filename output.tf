@@ -8,3 +8,7 @@ output "public-subnet" {
 output "private-subnet" {
   value = "${aws_subnet.private.id}"
 }
+
+output "public-sg" {
+  value = "${aws_security_group.public.id}"
+}
