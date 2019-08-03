@@ -12,3 +12,6 @@ output "private-subnet" {
 output "public-sg" {
   value = "${aws_security_group.public.id}"
 }
+output "key_name" {
+  value = "${var.key_name}"
+}
