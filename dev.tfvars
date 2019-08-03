@@ -5,6 +5,6 @@ Dept       = "IT"
 
 
 
-ami           = "ami-0b898040803850657"
+ami           = "ami-01ed306a12b7d1c96"
 instance_type = "t2.micro"
 key_name      = "Mymac1"
