@@ -1,7 +1,7 @@
 terraform {
 
   backend "s3" {
-    bucket = "insfrastructure-april-chris"
+    bucket = "infrastucture-april-chris"
     region = "us-west-2"
     key    = "infra.state"
   }
