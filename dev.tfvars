@@ -6,5 +6,5 @@ Dept       = "IT"
 
 
 ami           = "ami-a0cfeed8"
-instance_type = "t2.micro"
+instance_type = "t2.large"
 key_name      = "MyMac1"
