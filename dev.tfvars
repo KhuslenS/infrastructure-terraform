@@ -1,3 +1,8 @@
+region = "us-east-1"
+
+
+
+
 Name       = "wordpress"
 Env        = "Dev"
 Created_by = "Khuslen"
