@@ -20,11 +20,11 @@ module "wordpress" {
   health_check_type         = "EC2"
   min_size                  = 6
   max_size                  = 128
-  desired_capacity          = 4
+  desired_capacity          = 6
   wait_for_capacity_timeout = 0
 
 
-  tag_as_map = {
+  tags_as_map = {
     Name      = "${var.Name}"
     Env       = "${var.Env}"
     Create_by = "${var.Created_by}"
