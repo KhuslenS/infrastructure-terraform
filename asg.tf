@@ -1,6 +1,6 @@
 module "wordpress" {
   source  = "terraform-aws-modules/autoscaling/aws"
-  version = "~> 2.6"
+  version = "~> 2.11"
 
   name = "service"
 
