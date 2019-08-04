@@ -1,30 +1,9 @@
-variable "Name" {
-
-}
-
-variable "Env" {
-
-}
-
-variable "Created_by" {
-
-}
-
-variable "Dept" {
-
-}
-
-variable "ami" {
-
-}
-
-variable "key_name" {
-
-}
-variable "instance_type" {
-
-}
-
-variable "region" {
-
-}
+variable "Name" {}
+variable "Env" {}
+variable "Created_by" {}
+variable "Dept" {}
+variable "ami" {}
+variable "key_name" {}
+variable "instance_type" {}
+variable "region" {}
+variable "appname" {}
