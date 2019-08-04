@@ -6,7 +6,7 @@ module "wordpress" {
   instance_count = 3
 
   ami                    = "${var.ami}"
-  instance_type          = "${var.ami}"
+  instance_type          = "${var.instance_type}"
   key_name               = "${var.key_name}"
   monitoring             = true
   vpc_security_group_ids = ["${aws_security_group.public.id}"]
