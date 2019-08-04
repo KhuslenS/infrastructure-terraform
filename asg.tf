@@ -12,12 +12,7 @@ module "wordpress" {
   security_groups = ["${aws_security_group.public.id}"]
 
 
-  root_block_device = [
-    {
-      volume_size = "8"
-      volume_type = "gp2"
-    },
-  ]
+
 
   # Auto scaling group
   asg_name                  = "wordpress-asg"
