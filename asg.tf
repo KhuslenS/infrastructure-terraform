@@ -18,9 +18,9 @@ module "wordpress" {
   asg_name                  = "${var.appname}-asg"
   vpc_zone_identifier       = ["${aws_subnet.public.id}"]
   health_check_type         = "EC2"
-  min_app_size              = ""
-  max_app_size              = ""
-  desired_app_capacity      = ""
+  min_size                  = "${var.min_app_size}"
+  max_size                  = "${var.max_app_size}"
+  desired_capacity          = "${var.desired_app_capacity}"
   wait_for_capacity_timeout = 0
 
 
