@@ -21,7 +21,7 @@ module "wordpress" {
   min_app_size              = ""
   max_app_size              = ""
   desired_app_capacity      = ""
-  wait_for_capacity_timeout = ""
+  wait_for_capacity_timeout = 0
 
 
   tags_as_map = {
