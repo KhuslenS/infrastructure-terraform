@@ -2,10 +2,10 @@ module "mysql" {
   source  = "terraform-aws-modules/autoscaling/aws"
   version = " 3.0"
 
-  name = "${db_name}-asg"
+  name = "${var.db_name}-asg"
 
   # Launch configuration
-  lc_name = "${db_name}-lc"
+  lc_name = "${var.db_name}-lc"
 
   image_id        = "${var.ami}"
   instance_type   = "${var.instance_type}"
@@ -15,7 +15,7 @@ module "mysql" {
 
 
   # Auto scaling group
-  asg_name                  = "${db_name}-asg"
+  asg_name                  = "${var.db_name}-asg"
   vpc_zone_identifier       = ["${aws_subnet.private.id}"]
   health_check_type         = "EC2"
   min_size                  = "${var.min_db_size}"
