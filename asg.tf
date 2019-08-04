@@ -24,7 +24,7 @@ module "wordpress" {
   wait_for_capacity_timeout = 0
 
 
-  tags = {
+  tag_as_map = {
     Name      = "${var.Name}"
     Env       = "${var.Env}"
     Create_by = "${var.Created_by}"
