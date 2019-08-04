@@ -27,3 +27,4 @@ module "wordpress" {
   max_size                  = 128
   desired_capacity          = 4
   wait_for_capacity_timeout = 0
+}
