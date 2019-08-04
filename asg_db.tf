@@ -20,7 +20,7 @@ module "mysql" {
   health_check_type         = "EC2"
   min_size                  = "${var.min_db_size}"
   max_size                  = "${var.max_db_size}"
-  desired_capacity          = "${var.desired_db_size}"
+  desired_capacity          = "${var.desired_db_capacity}"
   wait_for_capacity_timeout = 0
 
 
