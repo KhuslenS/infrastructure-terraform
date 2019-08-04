@@ -16,7 +16,7 @@ module "wordpress" {
 
   # Auto scaling group
   asg_name                  = "wordpress-asg"
-  vpc_zone_identifier       = ["${aws_security_group.public.id}"]
+  vpc_zone_identifier       = ["${aws_subnet.public.id}"]
   health_check_type         = "EC2"
   min_size                  = 3
   max_size                  = 128
