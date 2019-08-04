@@ -7,3 +7,10 @@ variable "key_name" {}
 variable "instance_type" {}
 variable "region" {}
 variable "appname" {}
+variable "db_name" {}
+variable "min_app_size" {}
+variable "max_app_size" {}
+variable "desired_app_capacity" {}
+variable "min_db_size" {}
+variable "max_db_size" {}
+variable "desired_db_capacity" {}
