@@ -27,11 +27,3 @@ module "wordpress" {
   max_size                  = 128
   desired_capacity          = 4
   wait_for_capacity_timeout = 0
-
-  tags = {
-    Name      = "${var.Name}"
-    Env       = "${var.Env}"
-    Create_by = "${var.Created_by}"
-    Dept      = "${var.Dept}"
-  }
-}
